@@ -1,0 +1,2 @@
+def rolling_log(calls, k):
+return calls[-k:]
