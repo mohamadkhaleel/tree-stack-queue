@@ -1,0 +1,3 @@
+def undo_actions(actions, undo_steps):
+    return actions[:-undo_steps] if undo_steps <= len(actions) else []
+    
