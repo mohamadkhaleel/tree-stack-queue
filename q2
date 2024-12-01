@@ -1,0 +1,14 @@
+def reverse_order(book_ids):
+    stack = []  # Initialize an empty stack
+
+    # Push all book IDs onto the stack
+    for book_id in book_ids:
+        stack.append(book_id)
+
+    reversed_books = []
+
+    # Pop all elements from the stack to reverse the order
+    while stack:
+        reversed_books.append(stack.pop())
+
+    return reversed_books
