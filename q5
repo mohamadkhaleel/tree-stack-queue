@@ -1,0 +1,12 @@
+from collections import deque
+
+def serve_customers(customers):
+   
+    queue = deque(customers)  
+    served_customers = []
+
+    while queue:
+        served_customer = queue.popleft()
+        served_customers.append(served_customer)
+
+    return served_customers
